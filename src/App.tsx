@@ -20,7 +20,7 @@ const App = () => {
       })
   }, []);
 
-  const buyStaff = () => {
+  const buyStaff = (type: string, cost: number) => {
     console.log('Buy staff');
   }
 

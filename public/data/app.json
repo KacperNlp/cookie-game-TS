@@ -3,17 +3,20 @@
         {
             "name": "Grandmother",
             "cost": 15,
-            "productions": 1
+            "productions": 1,
+            "type": 1
         },
         {
             "name": "Baking machine",
             "cost": 1000,
-            "productions": 10
+            "productions": 10,
+            "type": 2
         },
         {
             "name": "Bakery",
             "cost": 15000,
-            "productions": 100
+            "productions": 100,
+            "type": 3
         }
     ]
 }
