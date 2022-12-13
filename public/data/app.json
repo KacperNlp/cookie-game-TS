@@ -1,0 +1,19 @@
+{
+    "store": [
+        {
+            "name": "Grandmother",
+            "cost": 15,
+            "productions": 1
+        },
+        {
+            "name": "Baking machine",
+            "cost": 1000,
+            "productions": 10
+        },
+        {
+            "name": "Bakery",
+            "cost": 15000,
+            "productions": 100
+        }
+    ]
+}
