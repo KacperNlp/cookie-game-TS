@@ -1,8 +1,9 @@
 import { createContext } from "react";
 
-interface AppContextInterface {
+export interface AppContextInterface {
     cookieCounter: number,
     staff: Array<object>,
+    store: Array<object>,
     buyStaff(): void;
 }
 
