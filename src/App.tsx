@@ -4,6 +4,7 @@ import { AppContext, AppContextInterface } from './Context/AppContext';
 
 import './App.scss';
 import Store from './components/Store/Store';
+import UserInterface from './components/UserInterface/UserInterface';
 
 const App = () => {
   const [cookies, setCookies] = useState(0);
@@ -43,6 +44,7 @@ const App = () => {
     <AppContext.Provider value={appContextValues}>
       <div className="app">
         <Store/>
+        <UserInterface/>
       </div>
     </AppContext.Provider>
    );
