@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { AppContext, AppContextInterface } from './Context/AppContext';
 
 import './App.scss';
+import Store from './components/Store/Store';
 
 const App = () => {
   const [cookies, setCookies] = useState(0);
@@ -24,16 +25,25 @@ const App = () => {
     console.log('Buy staff');
   }
 
+  const addCookieOnClick = () => {
+    setCookies(prevValue => (prevValue + 1))
+  }
+
   const appContextValues: AppContextInterface = {
     cookieCounter: cookies,
     staff: [],
     store: store,
-    buyStaff: buyStaff
+    buyStaff: buyStaff,
+    addCookieByClick: addCookieOnClick
   }
+
+  if(!store.length) return null;
 
   return ( 
     <AppContext.Provider value={appContextValues}>
-      <div className="app"></div>
+      <div className="app">
+        <Store/>
+      </div>
     </AppContext.Provider>
    );
 }
